@@ -61,8 +61,21 @@ export function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
-function countFlips(array) {
-
+export function countFlips(array) {
+  var headCount = 0;
+  var tailCount = 0;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == "heads") {
+      headCount += 1;
+    }
+    if (array[i] == "tails") {
+      tailCount += 1;
+    }
+  }
+  return {
+    tails: tailCount,
+    heads: headCount,
+  }
 }
 
 /** Flip a coin!
