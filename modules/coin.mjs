@@ -40,8 +40,12 @@ export function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
-
+export function coinFlips(flips) {
+  var result = [flips];
+  for (var i = 0; i < flips; i++) {
+    result[i] = coinFlip();
+  }
+  return result;
 }
 
 /** Count multiple flips
