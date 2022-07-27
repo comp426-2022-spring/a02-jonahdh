@@ -9,7 +9,7 @@ const args = minimist(process.argv.slice(2));
 // Declare argument name "number"
 args['number']
 
-// Flip with the argument or once if none provided;
+// Flip with the argument or once if none provided
 const flipNum = args.number || 1;
 const result = coinFlips(flipNum);
 const count = countFlips(result);
