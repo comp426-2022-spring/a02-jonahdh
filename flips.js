@@ -1,4 +1,4 @@
-// Import the coinflips and countFlips functions from coin module"
+// Import the coinFlips and countFlips functions from coin module"
 // Import the minimist package
 import { coinFlips, countFlips} from "./modules/coin.mjs";
 import minimist from "minimist";
