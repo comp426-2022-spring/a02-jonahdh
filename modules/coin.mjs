@@ -89,8 +89,12 @@ export function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
-
+export function flipACoin(call) {
+  var flip = coinFlip();
+  var result;
+  if (call == flip) result = "win";
+  else result = "loss";
+  return {call: call, flip: flip, result: result};
 }
 
 
