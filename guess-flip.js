@@ -1,6 +1,6 @@
 // Import the coinFlip function and minimist
 import { flipACoin } from "./modules/coin.mjs";
-import minimist from "minimist";
+import minimist from 'minimist';
 
 // Process args
 const args = minimist(process.argv.slice(2));

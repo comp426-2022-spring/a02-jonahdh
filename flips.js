@@ -1,7 +1,7 @@
 // Import the coinFlips and countFlips functions from coin module"
 // Import the minimist package
 import { coinFlips, countFlips} from "./modules/coin.mjs";
-import minimist from "minimist";
+import minimist from 'minimist';
 
 // Format the args using minimist
 const args = minimist(process.argv.slice(2));
